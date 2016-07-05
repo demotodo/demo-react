@@ -4,9 +4,15 @@ var babelify = require("babelify");
 var source = require("vinyl-source-stream");
 
 gulp.task("default", function () {
-    return browserify("./src/app.js")
+    console.log("in default task")
+});
+
+
+gulp.task("demo-createElement", function () {
+    return browserify("./src/demo-createElement.js")
         .transform(babelify)
         .bundle()
-        .pipe(source("snapterest.js"))
+        .pipe(source("demo-react.js"))
         .pipe(gulp.dest("./build/"));
+
 });
