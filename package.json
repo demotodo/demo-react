@@ -1,0 +1,27 @@
+{
+  "name": "demo-react",
+  "version": "1.0.0",
+  "description": "demo react js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demotodo/demo-react.git"
+  },
+  "keywords": [
+    "demo",
+    "react",
+    "js"
+  ],
+  "author": "Bribin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/demotodo/demo-react/issues"
+  },
+  "homepage": "https://github.com/demotodo/demo-react#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
