@@ -25,3 +25,12 @@ gulp.task("demo-jsx", function () {
         .pipe(gulp.dest("./build/"));
 
 });
+
+gulp.task("demo-state", function () {
+    return browserify("./src/demo-state.js")
+        .transform(babelify, {presets: ["react"]})
+        .bundle()
+        .pipe(source("demo-react.js"))
+        .pipe(gulp.dest("./build/"));
+
+});
