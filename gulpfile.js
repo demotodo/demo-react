@@ -1,5 +1,12 @@
 var gulp = require("gulp");
+var browserify = require("browserify");
+var babelify = require("babelify");
+var source = require("vinyl-source-stream");
 
 gulp.task("default", function () {
-    console.log("in gulp default task");
+    return browserify("./src/app.js")
+        .transform(babelify)
+        .bundle()
+        .pipe(source("snapterest.js"))
+        .pipe(gulp.dest("./build/"));
 });
