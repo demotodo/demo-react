@@ -1,7 +1,7 @@
 var React = require("react");
 var ReactDOM = require("react-dom");
 
-var reactClass = React.createClass({
+var ReactClass = React.createClass({
     getInitialState: function () {
         return {
             isHeaderHidden: false,
@@ -26,6 +26,6 @@ var reactClass = React.createClass({
     }
 });
 
-var reactComponent = React.createElement(reactClass);
+var reactComponent = React.createElement(ReactClass);
 
 ReactDOM.render(reactComponent, document.getElementById("react-application"));

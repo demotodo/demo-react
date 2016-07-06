@@ -34,3 +34,12 @@ gulp.task("demo-state", function () {
         .pipe(gulp.dest("./build/"));
 
 });
+
+gulp.task("demo-lifecycle", function () {
+    return browserify("./src/demo-lifecycle.js")
+        .transform(babelify, {presets: ["react"]})
+        .bundle()
+        .pipe(source("demo-react.js"))
+        .pipe(gulp.dest("./build/"));
+
+});
